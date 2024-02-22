@@ -8,8 +8,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts",
 		"lint:fix": "npm run lint:check --fix",
-		"format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-		"prepare": "husky"
+		"format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
 	},
 	"author": "Nayeem Uddin",
 	"license": "ISC",
