@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/nayeem/Desktop/university-management-syestem/logs/winston/errors/.839a2ee2b9faa86449c82eb6ae74648e632611de-audit.json",
+    "files": [
+        {
+            "date": 1708667495790,
+            "name": "/home/nayeem/Desktop/university-management-syestem/logs/winston/errors/UM-2024-23-02-11-error.log",
+            "hash": "1578abd03f97b92ee44720d1c28e95edecae9c31f20a18f7b4af1ecf2f024d16"
+        }
+    ],
+    "hashType": "sha256"
+}
