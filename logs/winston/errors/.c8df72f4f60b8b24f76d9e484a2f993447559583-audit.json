@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/.c8df72f4f60b8b24f76d9e484a2f993447559583-audit.json",
+    "files": [
+        {
+            "date": 1709090760392,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-28-02-09-error.log",
+            "hash": "bf70869ebfa7b33a6fed351f582c5fc81b107505c849925292d1de554102b446"
+        },
+        {
+            "date": 1709092955815,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-28-02-10-error.log",
+            "hash": "90c726209ac7cffbcabf576b516ce01a64a438b22bf877cf4921b83f94b59f4e"
+        },
+        {
+            "date": 1709100591246,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-28-02-12-error.log",
+            "hash": "d578cdc048148cb19a57189bc8e864f0b610155dc09789b343bb86f5f4757fc9"
+        },
+        {
+            "date": 1709103678359,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-28-02-13-error.log",
+            "hash": "8e43db55e9f469ed72f26d980d74fa9970127c6551d5c9844a1e3bf981c52323"
+        },
+        {
+            "date": 1709264027634,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-01-03-09-error.log",
+            "hash": "16b64ef00a84ecc1587f255c494a0c26462238ffaee610aea87cafa9e3fb73a2"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,98 @@
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:01:20.074Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:01:20.165Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:08:38.344Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:08:38.428Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:09.699Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:09.722Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:20.628Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:20.655Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:32.342Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:32.376Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:48.924Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:11:48.947Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:12:05.060Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-02-28T07:12:05.088Z'
+}
