@@ -1,0 +1,235 @@
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'user', 'role' ],
+      message: 'Role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-03-01T13:39:56.423Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'user', 'role' ],
+      message: 'Role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-03-01T13:42:01.543Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'user', 'role' ],
+      message: 'Role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-03-01T13:45:34.493Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'user', 'role' ],
+      message: 'Role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-03-01T13:46:38.581Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'user', 'role' ],
+      message: 'Role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "user",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-03-01T13:47:53.695Z'
+}

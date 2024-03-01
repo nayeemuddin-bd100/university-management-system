@@ -24,7 +24,7 @@ async function bootstrap() {
   }
 
   process.on("unhandledRejection", (error) => {
-    console.log("Unhandled Rejection Detected,Shutting down....");
+    console.log("Unhandled Rejection Detected,Shutting down...");
 
     if (server) {
       server.close(() => {
@@ -40,10 +40,10 @@ async function bootstrap() {
 bootstrap();
 
 // event listener for the 'SIGTERM' event
-process.on("SIGTERM", () => {
-  if (server) {
-    server.close(() => {
-      console.log("Process terminated");
-    });
-  }
-});
+// process.on("SIGTERM", () => {
+//   if (server) {
+//     server.close(() => {
+//       console.log("Process terminated");
+//     });
+//   }
+// });

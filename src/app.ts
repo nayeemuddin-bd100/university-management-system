@@ -1,7 +1,7 @@
 import cors from "cors";
 import express, { Application, Request, Response } from "express";
 import globalErrorHandler from "./app/middleware/globalErrorHandler";
-import { userRoute } from "./app/modules/users/user.route";
+import { userRoute } from "./app/modules/user/user.route";
 
 const app: Application = express();
 app.use(cors());
@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 //app route
 app.use("/api/v1/users/", userRoute);
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (_req: Request, res: Response) => {
   res.send("Hello World!");
 
   // Promise.reject("Unhandled promise rejection");

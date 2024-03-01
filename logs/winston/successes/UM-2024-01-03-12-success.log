@@ -1,0 +1,62 @@
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-03-01T06:09:28.562Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-03-01T06:09:28.622Z'
+}
+3/1/2024, 12:11:26 PM [UM] info: Database connected successfully
+3/1/2024, 12:11:26 PM [UM] info: App listening on port 5000
+3/1/2024, 12:13:49 PM [UM] info: 🥳 Database connected successfully
+3/1/2024, 12:13:49 PM [UM] info: 🥳 App listening on port 5000
+3/1/2024, 12:15:54 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:15:54 PM [UM] info: 👌 App listening on port 5000
+3/1/2024, 12:16:42 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:16:42 PM [UM] info: 👌 App listening on port 5000
+3/1/2024, 12:17:24 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:17:24 PM [UM] info: 👌 App listening on port 5000
+3/1/2024, 12:18:18 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:18:18 PM [UM] info: 👌 App listening on port 5000
+3/1/2024, 12:18:26 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:18:26 PM [UM] info: 👌 App listening on port 5000
+3/1/2024, 12:18:43 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:18:43 PM [UM] info: 👌 App listening on port 5000
+3/1/2024, 12:21:01 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:21:01 PM [UM] info: 👌 App listening on port 5000
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-03-01T06:22:49.195Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-03-01T06:22:49.217Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-03-01T06:24:51.354Z'
+}
+{
+  message: 'App listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2024-03-01T06:24:51.383Z'
+}
+3/1/2024, 12:25:00 PM [UM] info: 👌 Database connected successfully
+3/1/2024, 12:25:00 PM [UM] info: 👌 App listening on port 5000

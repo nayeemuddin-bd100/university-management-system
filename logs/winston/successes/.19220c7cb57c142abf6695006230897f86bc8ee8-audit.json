@@ -39,6 +39,26 @@
             "date": 1709271823523,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-11-success.log",
             "hash": "fe4c637d8195c6a20141207a678df26af85479252ff29cf820cb9ade5c3739a0"
+        },
+        {
+            "date": 1709273365003,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-12-success.log",
+            "hash": "8d6903e825c30688f03cd3ca66e7fa2e7257ac75d45c2ec661e1704cc832ae63"
+        },
+        {
+            "date": 1709285187981,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-15-success.log",
+            "hash": "05ccf1ca6463ffcb3004a21125353f5265aa2b2716f2269e58d9912f3cd20ffe"
+        },
+        {
+            "date": 1709295989657,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-18-success.log",
+            "hash": "d0863fcb0a7c7edc14dd7d4091c2607bc5a50f917ab1411d8c98025bdcff1a50"
+        },
+        {
+            "date": 1709299956363,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-19-success.log",
+            "hash": "04e6bb0ee3a144b3a910a94b5b127da3c727d4f31ebed3c03be74a585feb6d00"
         }
     ],
     "hashType": "sha256"
