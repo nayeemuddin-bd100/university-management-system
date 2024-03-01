@@ -29,6 +29,16 @@
             "date": 1709264027634,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-01-03-09-error.log",
             "hash": "16b64ef00a84ecc1587f255c494a0c26462238ffaee610aea87cafa9e3fb73a2"
+        },
+        {
+            "date": 1709268178939,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-01-03-10-error.log",
+            "hash": "05065b0aa2785b86f3b42760f2a9c08cf83463cb864be3d1261b853014641fe5"
+        },
+        {
+            "date": 1709271823533,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-01-03-11-error.log",
+            "hash": "65c05055aa7743c7f8361ca33ea0a426599c4b12eb009739442e6899383700f3"
         }
     ],
     "hashType": "sha256"

@@ -16,9 +16,10 @@ app.use("/api/v1/users/", userRoute);
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
 
-  //   throw new Error( "This is an error");
-  //   throw new ApiError(400, "Custom Error");
-  //   next("Next error");
+  // Promise.reject("Unhandled promise rejection");
+  // throw new Error("This is an error");
+  // throw new ApiError(400, "Custom Error");
+  // next("Next error");
 });
 
 //global Error handler

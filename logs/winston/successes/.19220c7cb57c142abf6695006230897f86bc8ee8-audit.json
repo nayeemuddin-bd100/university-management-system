@@ -29,6 +29,16 @@
             "date": 1709264027627,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-09-success.log",
             "hash": "c613a9c6fc2043644f11b1d8c2bc5f5b107a239e245a2db88c2b8ead4df0055b"
+        },
+        {
+            "date": 1709268178930,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-10-success.log",
+            "hash": "f76a01ec8e0c575f2f378e4d4e29b41e2e4dfb639cc914fc32abf8c18262a56a"
+        },
+        {
+            "date": 1709271823523,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-11-success.log",
+            "hash": "fe4c637d8195c6a20141207a678df26af85479252ff29cf820cb9ade5c3739a0"
         }
     ],
     "hashType": "sha256"
