@@ -59,6 +59,11 @@
             "date": 1709299956363,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-19-success.log",
             "hash": "04e6bb0ee3a144b3a910a94b5b127da3c727d4f31ebed3c03be74a585feb6d00"
+        },
+        {
+            "date": 1709311011491,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-22-success.log",
+            "hash": "3eeb72d6925a3d97845048500cc87835626e26aecaedf09cd78abbd5a3364d54"
         }
     ],
     "hashType": "sha256"

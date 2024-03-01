@@ -59,6 +59,11 @@
             "date": 1709299956373,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-01-03-19-error.log",
             "hash": "fc6fc2c8539c88258894b366b48e81fe7d02657b0accd8899bd9b036c2a231ac"
+        },
+        {
+            "date": 1709311011500,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-01-03-22-error.log",
+            "hash": "a4251931266198f000d963925c8ddf7f10bc9055137c8c51966d5f323c634ad8"
         }
     ],
     "hashType": "sha256"
