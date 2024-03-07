@@ -79,6 +79,21 @@
             "date": 1709785931704,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-07-03-10-error.log",
             "hash": "5ef739d8851a24942c53ee055eaf753975b5130bcfd748e22212648577c0dca2"
+        },
+        {
+            "date": 1709787703078,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-07-03-11-error.log",
+            "hash": "2bd9b01e31c03b34f641697c700eda6a0a8abe0102058a22180ea8a72257543b"
+        },
+        {
+            "date": 1709791829544,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-07-03-12-error.log",
+            "hash": "2fc3a9593969d8f83a6957341f48234ed4ac81e9d44e95f8cc30416958bb35bc"
+        },
+        {
+            "date": 1709803096674,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/errors/UM-2024-07-03-15-error.log",
+            "hash": "1bf4fec2eccdcf44c25d24b4f34df210191cfced7071c8d5dd0650f5ba4eb192"
         }
     ],
     "hashType": "sha256"
