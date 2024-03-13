@@ -1,5 +1,6 @@
 import cors from "cors";
-import express, { Application, Request, Response } from "express";
+import express, { Application, NextFunction, Request, Response } from "express";
+import { StatusCodes } from "http-status-codes";
 import globalErrorHandler from "./app/middleware/globalErrorHandler";
 import routers from "./app/routes";
 
@@ -26,5 +27,21 @@ app.get("/", (_req: Request, res: Response) => {
 
 //global Error handler
 app.use(globalErrorHandler);
+
+//handle Not Found Route
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(StatusCodes.NOT_FOUND).json({
+    statusCode: StatusCodes.NOT_FOUND,
+    success: false,
+    message: "API Not Found",
+    errorMessage: [
+      {
+        path: req.originalUrl,
+        message: "API Not Found",
+      },
+    ],
+  });
+  next();
+});
 
 export default app;
