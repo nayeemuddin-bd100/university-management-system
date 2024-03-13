@@ -1,0 +1,18 @@
+{
+  service: 'user-service',
+  level: 'error',
+  message: '🔥 globalErrorHandler Invalid sort value: { year: descd }',
+  stack: 'TypeError: Invalid sort value: { year: descd }\n' +
+    '    at _handleSortValue (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/query.js:2908:9)\n' +
+    '    at model.Query.Query.sort (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/query.js:2877:19)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/src/app/modules/academicSemester/academicSemester.service.ts:36:6\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/src/app/modules/academicSemester/academicSemester.service.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (/home/nayeem/Desktop/code/university-management-syestem/src/app/modules/academicSemester/academicSemester.service.ts:4:12)\n' +
+    '    at Object.getAllSemesters (/home/nayeem/Desktop/code/university-management-syestem/src/app/modules/academicSemester/academicSemester.service.ts:24:53)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/src/app/modules/academicSemester/academicSemester.controller.ts:33:37\n' +
+    '    at Generator.next (<anonymous>)',
+  label: 'UM',
+  timestamp: '2024-03-13T05:59:45.235Z'
+}
