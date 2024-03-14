@@ -6,16 +6,6 @@
     "auditLog": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/.19220c7cb57c142abf6695006230897f86bc8ee8-audit.json",
     "files": [
         {
-            "date": 1709100591242,
-            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-28-02-12-success.log",
-            "hash": "9181015c656d76735dc13a3f1614fe6615c5003d83bd3b3431cbd3cfb431de98"
-        },
-        {
-            "date": 1709103678351,
-            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-28-02-13-success.log",
-            "hash": "2247d2c935dc10c62d90ba5b88918e37452318da82cef8af888ea4138c39042a"
-        },
-        {
             "date": 1709264027627,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-01-03-09-success.log",
             "hash": "c613a9c6fc2043644f11b1d8c2bc5f5b107a239e245a2db88c2b8ead4df0055b"
@@ -94,6 +84,21 @@
             "date": 1710306194459,
             "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-13-03-11-success.log",
             "hash": "1811e168d19c98f62c287a41c9f6b2f2cb984d5055221e16856131d7e5e74636"
+        },
+        {
+            "date": 1710389129863,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-14-03-10-success.log",
+            "hash": "3713df01dff0c3ee3caeca7c6b7b5cef65077b6861337fd482dae7fef89eeee4"
+        },
+        {
+            "date": 1710392595968,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-14-03-11-success.log",
+            "hash": "1ce33e76ab0726d7612e9f50cb651fe8a57e46d981d62b89128ce422833a1d86"
+        },
+        {
+            "date": 1710396193140,
+            "name": "/home/nayeem/Desktop/code/university-management-syestem/logs/winston/successes/UM-2024-14-03-12-success.log",
+            "hash": "2174c33559015802dc59b69ec8ffbb7d77abe2f71f78f39b1c8b7229ca15ae54"
         }
     ],
     "hashType": "sha256"
