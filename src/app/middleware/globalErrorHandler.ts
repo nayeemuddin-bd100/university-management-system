@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ErrorRequestHandler } from "express";
 import { ZodError } from "zod";
 import config from "../../config";
@@ -51,7 +52,5 @@ const globalErrorHandler: ErrorRequestHandler = (error, _req, res, next) => {
     errorMessage,
     stack: config.env !== "production" ? error?.stack : undefined,
   });
-
-  next();
 };
 export default globalErrorHandler;
