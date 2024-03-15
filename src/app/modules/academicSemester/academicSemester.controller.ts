@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import catchAsync from "../../../shared/catchAsync";
 import pick from "../../../shared/pick";
@@ -39,22 +39,18 @@ const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-const getSingleSemester = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
-    const id = req.params?.id;
+const getSingleSemester = catchAsync(async (req: Request, res: Response) => {
+  const id = req.params?.id;
 
-    const result = await academicSemesterService.getSingleSemester(id);
+  const result = await academicSemesterService.getSingleSemester(id);
 
-    sendResponse(res, {
-      statusCode: StatusCodes.OK,
-      success: true,
-      message: "Academic Semester retrieved successfully",
-      data: result,
-    });
-
-    next();
-  }
-);
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Academic Semester retrieved successfully",
+    data: result,
+  });
+});
 
 const updateSemester = catchAsync(async (req: Request, res: Response) => {
   const id = req.params?.id;
