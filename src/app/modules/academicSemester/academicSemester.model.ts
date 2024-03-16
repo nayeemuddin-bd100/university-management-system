@@ -38,7 +38,12 @@ const AcademicSemesterSchema = new Schema<IAcademicSemester>(
       enum: academicSemesterMonth,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
+  }
 );
 
 AcademicSemesterSchema.pre("save", async function (next) {
