@@ -47,3 +47,12 @@ export type StudentModel = Model<IStudent, Record<string, unknown>>;
 // export type IStudent = InferSchemaType<typeof StudentSchema>;
 
 // export type StudentModel = Model<IStudent, Record<string, unknown>>;
+
+export type IStudentFilters = {
+  searchTerm?: string;
+  id?: string;
+  bloodGroup?: string;
+  email?: string;
+  contactNo?: string;
+  emergencyContactNo?: string;
+};
