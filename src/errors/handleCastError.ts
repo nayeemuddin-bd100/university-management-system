@@ -8,7 +8,8 @@ const handleCastError = (
   const errors: IGenericErrorMsg[] = [
     {
       path: err?.path,
-      message: "Invalid Semester Id",
+      // message: "Invalid Semester Id",
+      message: "Invalid Mongoose Id",
     },
   ];
 
