@@ -1,0 +1,400 @@
+{
+  service: 'user-service',
+  statusCode: 404,
+  level: 'error',
+  message: '🔥 globalErrorHandler Faculty not found !',
+  stack: 'Error: Faculty not found !\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/src/app/modules/faculty/faculty.service.ts:107:11\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (/home/nayeem/Desktop/code/university-management-syestem/src/app/modules/faculty/faculty.service.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:22:03.919Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'object',
+      received: 'undefined',
+      path: [ 'body', 'faculty' ],
+      message: 'Required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "object",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "faculty"\n' +
+    '    ],\n' +
+    '    "message": "Required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "object",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "faculty"\n' +
+    '    ],\n' +
+    '    "message": "Required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:22:58.447Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'object',
+      received: 'undefined',
+      path: [ 'body', 'faculty' ],
+      message: 'Required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "object",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "faculty"\n' +
+    '    ],\n' +
+    '    "message": "Required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "object",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "faculty"\n' +
+    '    ],\n' +
+    '    "message": "Required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:25:25.384Z'
+}
+{
+  service: 'user-service',
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'faculty', 'designation' ],
+      message: 'Designation is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔥 globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "faculty",\n' +
+    '      "designation"\n' +
+    '    ],\n' +
+    '    "message": "Designation is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "faculty",\n' +
+    '      "designation"\n' +
+    '    ],\n' +
+    '    "message": "Designation is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/zod/lib/types.js:166:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:25:37.518Z'
+}
+{
+  service: 'user-service',
+  errors: {
+    academicDepartment: CastError: Cast to ObjectId failed for value "Computer Science" (type string) at path "academicDepartment" because of "BSONError"
+        at SchemaObjectId.cast (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schema/objectId.js:250:11)
+        at SchemaObjectId.SchemaType.applySetters (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1221:12)
+        at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1418:22)
+        at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1115:16)
+        at model.Document (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:166:12)
+        at model.Model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:131:12)
+        at new model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4700:15)
+        at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2902:20
+        at Array.map (<anonymous>)
+        at Function.create (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2890:34) {
+      stringValue: '"Computer Science"',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: 'Computer Science',
+      path: 'academicDepartment',
+      reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+          at new ObjectId (/home/nayeem/Desktop/code/university-management-syestem/node_modules/bson/src/objectid.ts:119:15)
+          at castObjectId (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/cast/objectid.js:25:12)
+          at SchemaObjectId.cast (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schema/objectId.js:248:12)
+          at SchemaObjectId.SchemaType.applySetters (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1221:12)
+          at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1418:22)
+          at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1115:16)
+          at model.Document (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:166:12)
+          at model.Model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:131:12)
+          at new model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4700:15)
+          at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2902:20,
+      valueType: 'string'
+    },
+    academicFaculty: CastError: Cast to ObjectId failed for value "Engineering" (type string) at path "academicFaculty" because of "BSONError"
+        at SchemaObjectId.cast (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schema/objectId.js:250:11)
+        at SchemaObjectId.SchemaType.applySetters (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1221:12)
+        at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1418:22)
+        at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1115:16)
+        at model.Document (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:166:12)
+        at model.Model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:131:12)
+        at new model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4700:15)
+        at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2902:20
+        at Array.map (<anonymous>)
+        at Function.create (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2890:34) {
+      stringValue: '"Engineering"',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: 'Engineering',
+      path: 'academicFaculty',
+      reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+          at new ObjectId (/home/nayeem/Desktop/code/university-management-syestem/node_modules/bson/src/objectid.ts:119:15)
+          at castObjectId (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/cast/objectid.js:25:12)
+          at SchemaObjectId.cast (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schema/objectId.js:248:12)
+          at SchemaObjectId.SchemaType.applySetters (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1221:12)
+          at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1418:22)
+          at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1115:16)
+          at model.Document (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:166:12)
+          at model.Model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:131:12)
+          at new model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4700:15)
+          at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2902:20,
+      valueType: 'string'
+    },
+    gender: ValidatorError: `Male` is not a valid enum value for path `gender`.
+        at validate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1367:13)
+        at SchemaString.SchemaType.doValidate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1351:7)
+        at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:2986:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: '`Male` is not a valid enum value for path `gender`.',
+        type: 'enum',
+        enumValues: [ 'male', 'female' ],
+        path: 'gender',
+        fullPath: undefined,
+        value: 'Male'
+      },
+      kind: 'enum',
+      path: 'gender',
+      value: 'Male',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Faculty validation failed',
+  level: 'error',
+  message: '🔥 globalErrorHandler Faculty validation failed: academicDepartment: Cast to ObjectId failed for value "Computer Science" (type string) at path "academicDepartment" because of "BSONError", academicFaculty: Cast to ObjectId failed for value "Engineering" (type string) at path "academicFaculty" because of "BSONError", gender: `Male` is not a valid enum value for path `gender`.',
+  stack: 'ValidationError: Faculty validation failed: academicDepartment: Cast to ObjectId failed for value "Computer Science" (type string) at path "academicDepartment" because of "BSONError", academicFaculty: Cast to ObjectId failed for value "Engineering" (type string) at path "academicFaculty" because of "BSONError", gender: `Male` is not a valid enum value for path `gender`.\n' +
+    '    at model.Document.invalidate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:3201:32)\n' +
+    '    at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1460:12)\n' +
+    '    at model.$set (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:1115:16)\n' +
+    '    at model.Document (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:166:12)\n' +
+    '    at model.Model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:131:12)\n' +
+    '    at new model (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4700:15)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2902:20\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at Function.create (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:2890:34)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/src/app/modules/user/user.service.ts:109:38',
+  label: 'UM',
+  timestamp: '2024-05-25T08:28:37.392Z'
+}
+{
+  service: 'user-service',
+  errors: {
+    gender: ValidatorError: `Male` is not a valid enum value for path `gender`.
+        at validate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1367:13)
+        at SchemaString.SchemaType.doValidate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1351:7)
+        at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:2986:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: '`Male` is not a valid enum value for path `gender`.',
+        type: 'enum',
+        enumValues: [ 'male', 'female' ],
+        path: 'gender',
+        fullPath: undefined,
+        value: 'Male'
+      },
+      kind: 'enum',
+      path: 'gender',
+      value: 'Male',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Faculty validation failed',
+  level: 'error',
+  message: '🔥 globalErrorHandler Faculty validation failed: gender: `Male` is not a valid enum value for path `gender`.',
+  stack: 'ValidationError: Faculty validation failed: gender: `Male` is not a valid enum value for path `gender`.\n' +
+    '    at model.Document.invalidate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:3201:32)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/document.js:2994:17\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/schemaType.js:1370:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:29:47.218Z'
+}
+{
+  service: 'user-service',
+  path: 'faculty',
+  level: 'error',
+  message: '🔥 globalErrorHandler Cannot populate path `faculty` because it is not in your schema. Set the `strictPopulate` option to false to override.',
+  stack: 'StrictPopulateError: Cannot populate path `faculty` because it is not in your schema. Set the `strictPopulate` option to false to override.\n' +
+    '    at getModelsMapForPopulate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)\n' +
+    '    at populate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4334:21)\n' +
+    '    at _populate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4294:5)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4266:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Function.populate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4265:10)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/query.js:2472:11\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/query.js:3099:21\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:30:04.846Z'
+}
+{
+  service: 'user-service',
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'john.doe@example.com' },
+  level: 'error',
+  message: '🔥 globalErrorHandler E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "john.doe@example.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "john.doe@example.com" }\n' +
+    '    at InsertOneOperation.execute (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/insert.ts:79:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at executeOperationAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/execute_operation.ts:190:12)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:31:38.258Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  service: 'user-service',
+  index: 0,
+  code: 11000,
+  keyPattern: { contactNo: 1 },
+  keyValue: { contactNo: '123-456-7890' },
+  level: 'error',
+  message: '🔥 globalErrorHandler E11000 duplicate key error collection: university-management.faculties index: contactNo_1 dup key: { contactNo: "123-456-7890" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: university-management.faculties index: contactNo_1 dup key: { contactNo: "123-456-7890" }\n' +
+    '    at InsertOneOperation.execute (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/insert.ts:79:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at executeOperationAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/execute_operation.ts:190:12)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:32:05.495Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  service: 'user-service',
+  path: 'faculty',
+  level: 'error',
+  message: '🔥 globalErrorHandler Cannot populate path `faculty` because it is not in your schema. Set the `strictPopulate` option to false to override.',
+  stack: 'StrictPopulateError: Cannot populate path `faculty` because it is not in your schema. Set the `strictPopulate` option to false to override.\n' +
+    '    at getModelsMapForPopulate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)\n' +
+    '    at populate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4334:21)\n' +
+    '    at _populate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4294:5)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4266:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Function.populate (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/model.js:4265:10)\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/query.js:2472:11\n' +
+    '    at /home/nayeem/Desktop/code/university-management-syestem/node_modules/mongoose/lib/query.js:3099:21\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:32:18.981Z'
+}
+{
+  service: 'user-service',
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'johndoe.faculty@example.com' },
+  level: 'error',
+  message: '🔥 globalErrorHandler E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "johndoe.faculty@example.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "johndoe.faculty@example.com" }\n' +
+    '    at InsertOneOperation.execute (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/insert.ts:79:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at executeOperationAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/execute_operation.ts:190:12)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:32:50.599Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  service: 'user-service',
+  index: 0,
+  code: 11000,
+  keyPattern: { contactNo: 1 },
+  keyValue: { contactNo: '123-456-7892' },
+  level: 'error',
+  message: '🔥 globalErrorHandler E11000 duplicate key error collection: university-management.faculties index: contactNo_1 dup key: { contactNo: "123-456-7892" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: university-management.faculties index: contactNo_1 dup key: { contactNo: "123-456-7892" }\n' +
+    '    at InsertOneOperation.execute (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/insert.ts:79:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at executeOperationAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/execute_operation.ts:190:12)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:33:16.576Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  service: 'user-service',
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'johndoe.faculty@test.com' },
+  level: 'error',
+  message: '🔥 globalErrorHandler E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "johndoe.faculty@test.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "johndoe.faculty@test.com" }\n' +
+    '    at InsertOneOperation.execute (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/insert.ts:79:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at executeOperationAsync (/home/nayeem/Desktop/code/university-management-syestem/node_modules/mongodb/src/operations/execute_operation.ts:190:12)',
+  label: 'UM',
+  timestamp: '2024-05-25T08:33:31.725Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
