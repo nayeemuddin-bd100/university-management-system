@@ -1,33 +1,23 @@
 import { StatusCodes } from "http-status-codes";
+import { Secret } from "jsonwebtoken";
+import config from "../../../config";
 import ApiError from "../../../errors/ApiError";
+import { jwtHelpers } from "../../../helpers/jwtHelpers";
 import { User } from "../user/user.model";
-import { ILoginUser } from "./auth.interface";
+import { ILoginResponse, ILoginUser } from "./auth.interface";
 
-const loginUser = async (payload: ILoginUser) => {
+const loginUser = async (payload: ILoginUser): Promise<ILoginResponse> => {
   const { id, password } = payload;
 
-  // //check if user exist
-  // const isUserExist = await User.findOne(
-  //   { id },
-  //   { id: 1, password: 1, needsPasswordChange: 1 }
-  // );
-
-  // //   check password
-  // const isPasswordMatched = await bcrypt.compare(
-  //   password,
-  //   isUserExist?.password
-  // );
-
-  // ====> Restructure the above code into static method.
-
-  const user = await new User();
-  const isUserExist = await user.isUserExist(id);
+  // Check user is exist
+  const isUserExist = await User.isUserExist(id);
 
   if (!isUserExist) {
     throw new ApiError(StatusCodes.NOT_FOUND, " User does not found");
   }
 
-  const isPasswordMatched = await user.isPasswordMatch(
+  // Check Password
+  const isPasswordMatched = await User.isPasswordMatch(
     password,
     isUserExist.password ?? ""
   );
@@ -36,7 +26,26 @@ const loginUser = async (payload: ILoginUser) => {
     throw new ApiError(StatusCodes.UNAUTHORIZED, "Password is incorrect");
   }
 
-  return isUserExist;
+  const { id: userId, role, needsPasswordChange } = isUserExist;
+  // Create access token and refresh toke
+
+  const accessToken = jwtHelpers.createToken(
+    { userId, role },
+    config.jwt.secret as Secret,
+    config.jwt.expires_in as string
+  );
+
+  const refreshToken = jwtHelpers.createToken(
+    { userId, role },
+    config.jwt.refresh_secret as Secret,
+    config.jwt.refresh_expires_in as string
+  );
+
+  return {
+    accessToken,
+    refreshToken,
+    needsPasswordChange,
+  };
 };
 
 export const authService = {
