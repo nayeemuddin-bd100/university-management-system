@@ -2,9 +2,9 @@
 import bcrypt from "bcrypt";
 import { Schema, model } from "mongoose";
 import config from "../../../config";
-import { IUser, IUserMethods, UserModel } from "./user.interface";
+import { IUser, UserModel } from "./user.interface";
 
-const userSchema = new Schema<IUser, Record<string, never>, IUserMethods>(
+const userSchema = new Schema<IUser, UserModel>(
   {
     id: { type: String, required: true, unique: true },
     role: { type: String, required: true },
@@ -22,9 +22,35 @@ const userSchema = new Schema<IUser, Record<string, never>, IUserMethods>(
   }
 );
 
-userSchema.methods.isUserExist = async function (
+// instance Method
+// userSchema.methods.isUserExist = async function (
+//   id: string
+// ): Promise<Partial<IUser> | null> {
+//   const user = await User.findOne(
+//     { id },
+//     { id: 1, password: 1, needsPasswordChange: 1 }
+//   );
+
+//   return user;
+// };
+
+// // check password
+// userSchema.methods.isPasswordMatch = async function (
+//   givenPassword: string,
+//   savedPassword: string
+// ): Promise<boolean> {
+//   const isPasswordMatched = await bcrypt.compare(givenPassword, savedPassword);
+
+//   return isPasswordMatched;
+// };
+
+// static Method
+userSchema.statics.isUserExist = async function (
   id: string
-): Promise<Partial<IUser> | null> {
+): Promise<Pick<
+  IUser,
+  "id" | "password" | "role" | "needsPasswordChange"
+> | null> {
   const user = await User.findOne(
     { id },
     { id: 1, password: 1, needsPasswordChange: 1 }
@@ -33,8 +59,7 @@ userSchema.methods.isUserExist = async function (
   return user;
 };
 
-//   check password
-userSchema.methods.isPasswordMatch = async function (
+userSchema.statics.isPasswordMatch = async function (
   givenPassword: string,
   savedPassword: string
 ): Promise<boolean> {
@@ -43,11 +68,9 @@ userSchema.methods.isPasswordMatch = async function (
   return isPasswordMatched;
 };
 
+// hash password before saving
 userSchema.pre("save", async function (next) {
   const user = this;
-  console.log(user);
-
-  //hash password
   user.password = await bcrypt.hash(
     user.password,
     Number(config.bcrypt_salt_round)
