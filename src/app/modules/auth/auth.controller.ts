@@ -3,7 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import config from "../../../config";
 import catchAsync from "../../../shared/catchAsync";
 import sendResponse from "../../../shared/sendResponse";
-import { ILoginResponse } from "./auth.interface";
+import { ILoginResponse, IRefreshTokenResponse } from "./auth.interface";
 import { authService } from "./auth.service";
 
 const loginUser = catchAsync(async (req: Request, res: Response) => {
@@ -28,6 +28,28 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const refreshToken = catchAsync(async (req: Request, res: Response) => {
+  const { refreshToken } = req.cookies;
+
+  const result = await authService.refreshToken(refreshToken);
+  console.log("🚀 ~ refreshToken ~ result:", result);
+
+  const cookiesOptions = {
+    secure: config.env === "production",
+    httpOnly: true,
+  };
+
+  res.cookie("refreshToken", refreshToken, cookiesOptions);
+
+  sendResponse<IRefreshTokenResponse>(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "User Login Successfully",
+    data: result,
+  });
+});
+
 export const authController = {
   loginUser,
+  refreshToken,
 };
