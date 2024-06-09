@@ -114,12 +114,12 @@ const deleteFaculty = async (id: string): Promise<IFaculty | null> => {
     //delete faculty first
     const faculty = await Faculty.findOneAndDelete({ id }, { session });
     if (!faculty) {
-      throw new ApiError(404, "Failed to delete student");
+      throw new ApiError(404, "Failed to delete faculty");
     }
     //delete user
     await User.deleteOne({ id });
-    session.commitTransaction();
-    session.endSession();
+    await session.commitTransaction();
+    await session.endSession();
 
     return faculty;
   } catch (error) {
