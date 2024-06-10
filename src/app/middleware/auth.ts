@@ -11,6 +11,7 @@ const auth =
     try {
       // Get Token
       const token = req.headers.authorization;
+
       if (!token) {
         throw new ApiError(
           StatusCodes.UNAUTHORIZED,
@@ -20,14 +21,8 @@ const auth =
 
       // verify token
       let verifiedUser = null;
-      try {
-        verifiedUser = jwtHelpers.verifyToken(
-          token,
-          config.jwt.refresh_secret as Secret
-        );
-      } catch (err) {
-        throw new ApiError(StatusCodes.FORBIDDEN, "Invalid  token");
-      }
+
+      verifiedUser = jwtHelpers.verifyToken(token, config.jwt.secret as Secret);
 
       req.user = verifiedUser; //role,userId
 

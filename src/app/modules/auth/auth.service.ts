@@ -1,10 +1,11 @@
 import { StatusCodes } from "http-status-codes";
-import { Secret } from "jsonwebtoken";
+import { JwtPayload, Secret } from "jsonwebtoken";
 import config from "../../../config";
 import ApiError from "../../../errors/ApiError";
 import { jwtHelpers } from "../../../helpers/jwtHelpers";
 import { User } from "../user/user.model";
 import {
+  IChangePassword,
   ILoginResponse,
   ILoginUser,
   IRefreshTokenResponse,
@@ -84,7 +85,68 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   };
 };
 
+const changePassword = async (
+  user: JwtPayload | null,
+  passwordData: IChangePassword,
+  decodedRefreshToken: JwtPayload
+): Promise<void> => {
+  const { oldPassword, newPassword } = passwordData;
+
+  // Check user is exist
+  // const isUserExist = await User.isUserExist(user?.userId);
+
+  const isUserExist = await User.findOne({ id: user?.userId }).select(
+    "+password"
+  );
+
+  if (!isUserExist) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "User not found");
+  }
+
+  const isLoggedInUser = user?.userId === decodedRefreshToken?.userId;
+
+  // Check logged in user
+  if (!isLoggedInUser) {
+    throw new ApiError(StatusCodes.UNAUTHORIZED, "Unauthorized access");
+  }
+
+  // Check old password
+  const isPasswordMatched = await User.isPasswordMatch(
+    oldPassword,
+    isUserExist.password ?? ""
+  );
+
+  if (!isPasswordMatched) {
+    throw new ApiError(StatusCodes.UNAUTHORIZED, "Old password is incorrect");
+  }
+
+  isUserExist.needsPasswordChange = false;
+  isUserExist.password = newPassword;
+  await isUserExist.save();
+
+  //hash new password
+  // const hashedPassword = await bcrypt.hash(
+  //   newPassword,
+  //   Number(config.bcrypt_salt_round)
+  // );
+
+  // Update password
+  // const updatePassword = await User.findOneAndUpdate(
+  //   { id: user?.userId },
+  //   {
+  //     password: hashedPassword,
+  //     needsPasswordChange: false,
+  //     passwordUpdatedAt: Date.now(),
+  //   }
+  // );
+
+  // if (!updatePassword) {
+  //   throw new ApiError(StatusCodes.BAD_REQUEST, "Password update failed");
+  // }
+};
+
 export const authService = {
   loginUser,
   refreshToken,
+  changePassword,
 };

@@ -1,8 +1,12 @@
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
+import { Secret } from "jsonwebtoken";
 import config from "../../../config";
+import ApiError from "../../../errors/ApiError";
+import { jwtHelpers } from "../../../helpers/jwtHelpers";
 import catchAsync from "../../../shared/catchAsync";
 import sendResponse from "../../../shared/sendResponse";
+import { IUser } from "../user/user.interface";
 import { ILoginResponse, IRefreshTokenResponse } from "./auth.interface";
 import { authService } from "./auth.service";
 
@@ -32,7 +36,6 @@ const refreshToken = catchAsync(async (req: Request, res: Response) => {
   const { refreshToken } = req.cookies;
 
   const result = await authService.refreshToken(refreshToken);
-  console.log("🚀 ~ refreshToken ~ result:", result);
 
   const cookiesOptions = {
     secure: config.env === "production",
@@ -49,7 +52,32 @@ const refreshToken = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const changePassword = catchAsync(async (req: Request, res: Response) => {
+  const user = req.user;
+  const { ...passwordData } = req.body;
+
+  const refreshToken = req.cookies.refreshToken;
+  if (!refreshToken) return null;
+  const decodedRefreshToken = jwtHelpers.verifyToken(
+    refreshToken,
+    config.jwt.refresh_secret as Secret
+  );
+
+  if (!decodedRefreshToken) {
+    throw new ApiError(StatusCodes.UNAUTHORIZED, "Invalid refresh token");
+  }
+  await authService.changePassword(user, passwordData, decodedRefreshToken);
+
+  sendResponse<IUser>(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Change Password Successfully",
+    data: null,
+  });
+});
+
 export const authController = {
   loginUser,
   refreshToken,
+  changePassword,
 };
