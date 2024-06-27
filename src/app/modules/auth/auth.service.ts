@@ -120,6 +120,7 @@ const changePassword = async (
     throw new ApiError(StatusCodes.UNAUTHORIZED, "Old password is incorrect");
   }
 
+  // Update password
   isUserExist.needsPasswordChange = false;
   isUserExist.password = newPassword;
   await isUserExist.save();
@@ -145,8 +146,71 @@ const changePassword = async (
   // }
 };
 
+const forgetPassword = async (id: string) => {
+  // Check user is exist
+  const isUserExist = await User.isUserExist(id);
+
+  if (!isUserExist) {
+    throw new ApiError(StatusCodes.NOT_FOUND, " User does not found");
+  }
+
+  const { id: userId, role } = isUserExist;
+
+  const resetToken = jwtHelpers.createToken(
+    { userId, role },
+    config.jwt.secret as Secret,
+    "10m"
+  );
+
+  const resetUILink = `${config.reset_ui_base_url}?id=${isUserExist?.id}&token=${resetToken}`;
+
+  // const resetUIBody = resetUI(resetUILink);
+
+  // sendEmail(isUserExist.email, resetUIBody);
+
+  console.log(resetUILink);
+
+  return resetUILink;
+};
+
+const resetPassword = async (
+  payload: { id: string; newPassword: string },
+  token: string
+) => {
+  // Verify token
+  let verifiedToken = null;
+
+  try {
+    verifiedToken = jwtHelpers.verifyToken(token, config.jwt.secret as Secret);
+  } catch (err) {
+    throw new ApiError(StatusCodes.FORBIDDEN, "Invalid token");
+  }
+
+  const { userId } = verifiedToken;
+
+  // Check user is exist
+  const isUserExist = await User.findOne({ id: userId }).select("+password");
+
+  if (!isUserExist) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "User not found");
+  }
+
+  // check user is same
+  const isSameUser = payload?.id === userId;
+  if (!isSameUser) {
+    throw new ApiError(StatusCodes.UNAUTHORIZED, "Unauthorized access");
+  }
+
+  // Update password
+  isUserExist.needsPasswordChange = false;
+  isUserExist.password = payload?.newPassword;
+  await isUserExist.save();
+};
+
 export const authService = {
   loginUser,
   refreshToken,
   changePassword,
+  forgetPassword,
+  resetPassword,
 };
