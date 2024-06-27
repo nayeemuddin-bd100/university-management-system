@@ -17,4 +17,6 @@ export default {
     refresh_secret: process.env.JWT_REFRESH_SECRET,
     refresh_expires_in: process.env.JWT_REFRESH_EXPIRES_IN,
   },
+  reset_ui_app_pass: process.env.RESET_UI_APP_PASS,
+  reset_ui_base_url: process.env.RESET_UI_BASE_URL,
 };
