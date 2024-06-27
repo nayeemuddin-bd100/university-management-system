@@ -1,5 +1,6 @@
-import express from "express";
+import express, { NextFunction, Request, Response } from "express";
 import { ENUM_USER_ROLE } from "../../../enums/user";
+import { upload } from "../../../shared/uploadImgToCloudinary";
 import auth from "../../middleware/auth";
 import validateRequest from "../../middleware/validateRequest";
 import { userController } from "./user.controller";
@@ -9,6 +10,11 @@ const router = express.Router();
 
 router.post(
   "/create-student",
+  upload.single("file"),
+  (req: Request, res: Response, next: NextFunction) => {
+    req.body = JSON.parse(req.body.data);
+    next();
+  },
   validateRequest(UserValidation.createStudentZodSchema),
   userController.createStudent
 );

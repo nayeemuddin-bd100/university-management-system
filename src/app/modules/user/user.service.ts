@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { StatusCodes } from "http-status-codes";
 import mongoose from "mongoose";
 import config from "../../../config";
 import ApiError from "../../../errors/ApiError";
+import { uploadImgToCloudinary } from "../../../shared/uploadImgToCloudinary";
 import { IAcademicSemester } from "../academicSemester/academicSemester.interface";
 import { AcademicSemester } from "../academicSemester/academicSemester.model";
 import { IAdmin } from "../admin/admin.interface";
@@ -19,6 +21,7 @@ import {
 } from "./user.utils";
 
 const createStudent = async (
+  file: any,
   student: IStudent,
   user: IUser
 ): Promise<IUser | null> => {
@@ -43,6 +46,14 @@ const createStudent = async (
   try {
     session.startTransaction();
     const id = await generateStudentId(academicSemester as IAcademicSemester);
+
+    // Upload image to cloudinary
+    const imageName = `${id}-${student?.name?.firstName}`;
+    const path = file?.path;
+    const profileImage = await uploadImgToCloudinary(imageName, path);
+
+    // add image url into student data
+    student.profileImage = profileImage.secure_url;
 
     user.id = id;
     student.id = id;
