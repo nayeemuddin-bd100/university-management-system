@@ -2,6 +2,9 @@ import { Request, RequestHandler, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import catchAsync from "../../../shared/catchAsync";
 import sendResponse from "../../../shared/sendResponse";
+import { IAdmin } from "../admin/admin.interface";
+import { IFaculty } from "../faculty/faculty.interface";
+import { IStudent } from "../student/student.interface";
 import { IUser } from "./user.interface";
 import { usersService } from "./user.service";
 
@@ -47,4 +50,22 @@ const createAdmin: RequestHandler = catchAsync(
   }
 );
 
-export const userController = { createStudent, createFaculty, createAdmin };
+const getMe = catchAsync(async (req: Request, res: Response) => {
+  const { userId, role } = req.user as { userId: string; role: string };
+
+  const result = await usersService.getMe(userId, role);
+
+  sendResponse<IStudent | IAdmin | IFaculty | null>(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "User retrieved successfully",
+    data: result,
+  });
+});
+
+export const userController = {
+  createStudent,
+  createFaculty,
+  createAdmin,
+  getMe,
+};

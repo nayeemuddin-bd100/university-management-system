@@ -5,6 +5,7 @@ import { IStudent } from "../student/student.interface";
 
 export type IUser = {
   id: string;
+  email: string;
   role: string;
   password: string;
   needsPasswordChange: true | false;
@@ -31,7 +32,7 @@ export type UserModel = {
     id: string
   ): Promise<Pick<
     IUser,
-    "id" | "password" | "role" | "needsPasswordChange"
+    "id" | "email" | "password" | "role" | "needsPasswordChange"
   > | null>;
 
   isPasswordMatch(

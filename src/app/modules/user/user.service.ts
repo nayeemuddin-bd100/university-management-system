@@ -27,8 +27,9 @@ const createStudent = async (
     user.password = config.default_student_password as string;
   }
 
-  //set role
+  //set role and email
   user.role = "student";
+  user.email = student.email;
 
   const academicSemester = await AcademicSemester.findById(
     student.academicSemester
@@ -99,8 +100,9 @@ const createFaculty = async (
   if (!user.password) {
     user.password = config.default_faculty_pass as string;
   }
-  // set role
+  //set role and email
   user.role = "faculty";
+  user.email = faculty.email;
 
   // generate faculty id
   let newUserAllData = null;
@@ -160,8 +162,9 @@ const createAdmin = async (
   if (!user.password) {
     user.password = config.default_admin_pass as string;
   }
-  // set role
+  //set role and email
   user.role = "admin";
+  user.email = admin.email;
 
   // generate faculty id
   let newUserAllData = null;
@@ -210,8 +213,32 @@ const createAdmin = async (
   return newUserAllData;
 };
 
+const getMe = async (
+  userId: string,
+  role: string
+): Promise<IStudent | IAdmin | IFaculty | null> => {
+  // Check user is exist
+  const isUserExist = await User.isUserExist(userId);
+
+  if (!isUserExist) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "User not found");
+  }
+
+  let result = null;
+  if (role === "student") {
+    result = await Student.findOne({ id: userId });
+  } else if (role === "admin") {
+    result = await Admin.findOne({ id: userId });
+  } else if (role === "faculty") {
+    result = await Faculty.findOne({ id: userId });
+  }
+
+  return result;
+};
+
 export const usersService = {
   createStudent,
   createFaculty,
   createAdmin,
+  getMe,
 };
