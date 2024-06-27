@@ -11,9 +11,13 @@ import { usersService } from "./user.service";
 const createStudent: RequestHandler = catchAsync(
   async (req: Request, res: Response) => {
     const { student, ...userData } = req.body;
-    const result = await usersService.createStudent(student, userData);
+    const result = await usersService.createStudent(
+      req.file,
+      student,
+      userData
+    );
 
-    sendResponse<IUser>(res, {
+    sendResponse<IUser | null>(res, {
       statusCode: StatusCodes.OK,
       success: true,
       message: "Student created successfully",

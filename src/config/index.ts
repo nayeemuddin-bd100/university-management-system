@@ -19,4 +19,9 @@ export default {
   },
   reset_ui_app_pass: process.env.RESET_UI_APP_PASS,
   reset_ui_base_url: process.env.RESET_UI_BASE_URL,
+  cloudinary: {
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+  },
 };
